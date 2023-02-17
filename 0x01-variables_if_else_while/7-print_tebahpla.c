@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- * main - Prints all signle digit numbers
+ * main - Prints the lowercase alphabets in reverse
  *
  * Return: 0 (success)
  */
 int main(void)
 {
-	int a;
+	char i;
 
-	a = 0;
+	i = 'z';
 	while
-		(a < 10) {
-			putchar(a + '0');
-			a++;
+		(i >= 'a') {
+			putchar(i);
+			i--;
 		}
 	putchar('\n');
 	return (0);
