@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * wildcmp - Compares two strings, s1 and s2, with wildcards.
  * @s1: The first string to be compared.
