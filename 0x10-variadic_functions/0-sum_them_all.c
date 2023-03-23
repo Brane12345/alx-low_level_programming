@@ -3,6 +3,7 @@
 /**
  * sum_them_all - computes the sum of its parameters
  * @n: the number of parameters to sum
+ * @...: A variable number of paramters to calculate the sum of.
  *
  * Return: the sum of the parameters, or 0 if n is 0
  */
