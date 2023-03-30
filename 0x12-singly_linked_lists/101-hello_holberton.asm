@@ -1,20 +1,27 @@
-section .data
-	message db 'Hello, Holberton',0
-	format db '%s',10,0
+; My comments: It is so fun to write in assembly language
+; File: 101-hello_holberton.asm
+; Auth: Firdaus H. Salim
+; Desc: 64-bit assembly program that prints
+;       Hello, Holberton followed by a new line.
+
+extern printf
 
 section .text
-	global asm_start
+   global main
 
-	extern printf
+main:
+   push rbp
 
-asm_start:
-	; call printf with message and format arguments
-	mov rdi, format
-	mov rsi, message
-	xor rax, rax
-	call printf
+   mov rdi,fmt
+   mov rsi,msg
+   mov rax,0
+   call printf
 
-	; exit
-	xor rax, rax
-	mov al, 60
-	syscall
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   fmt: db "%s", 10, 0
